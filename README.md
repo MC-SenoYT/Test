@@ -1,10 +1,15 @@
-*This project has been created as part of the 42 curriculum by **TON_LOGIN**.*
+*This project has been created as part of the 42 curriculum by **kymuller**.*
 
-# 📚 Libft
+# Libft
 
-\<p align="center">   \<img src="[https://img.shields.io/badge/42-Common%20Core-000000?style=for-the-badge&logo=42](https://img.shields.io/badge/42-Common%20Core-000000?style=for-the-badge\&logo=42)" />   \<img src="[https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c](https://img.shields.io/badge/Language-C-blue?style=for-the-badge\&logo=c)" />   \<img src="[https://img.shields.io/badge/Status-Completed-success?style=for-the-badge](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)" /> \</p>
+![https://medium.com/@simonzerisenay/custom-c-library-secure-and-efficient-2e450da1c627](https://miro.medium.com/v2/resize:fit:720/format:webp/1*8lw6KktyFOL3wSCdZSRdsw.jpeg)
+---
+![https://img.shields.io/badge/42-Common%20Core-000000?style=for-the-badge&logo=42](https://img.shields.io/badge/42-Common%20Core-000000?style=for-the-badge\&logo=42)
+![https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c](https://img.shields.io/badge/Language-C-blue?style=for-the-badge\&logo=c)
 
-\<p align="center">   \<b>Your very first own C library.\</b>\<br>   Recreating essential C standard library functions from scratch. \</p>
+**Your very first own C library.**
+
+Recreating essential C standard library functions from scratch.
 
 ---
 
@@ -80,11 +85,12 @@ Utility functions designed to simplify common string and memory operations.
 | `ft_putendl_fd` | Writes a string followed by a newline.                   |
 | `ft_putnbr_fd`  | Writes an integer to a file descriptor.                  |
 
-### 3. Bonus Functions – Linked Lists
+### 3. Linked Lists Functions
 
-The bonus part introduces linked lists and dynamic data structures.
+This part introduces linked lists and dynamic data structures.
 
-The library implements a singly linked list using the `t_list` structure.
+>[!NOTE]
+>The library implements a singly linked list using the `t_list` structure.
 
 | Function          | Description                                                |
 | ----------------- | ---------------------------------------------------------- |
@@ -98,26 +104,16 @@ The library implements a singly linked list using the `t_list` structure.
 | `ft_lstiter`      | Applies a function to every element.                       |
 | `ft_lstmap`       | Creates a new list by applying a function to each element. |
 
-*Note: The function lists above represent the standard Libft subject. Make sure they match the functions actually implemented in your repository.*
-
 ---
 
 ## ⚙️ Instructions
-
-### Requirements
-
-To compile this library, you need:
-
-- A C compiler (GCC or Clang).
-- GNU Make.
-- A Unix-based environment (Linux or macOS).
 
 ### Installation
 
 Clone the repository:
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone git@vogsphere.42nice.fr:vogsphere/intra-uuid-51d970e0-5626-4d27-88c0-202ecfb93520-7802420-kymuller
 cd libft
 ```
 
@@ -127,12 +123,6 @@ Compile the mandatory part:
 
 ```bash
 make
-```
-
-Compile the bonus part:
-
-```bash
-make bonus
 ```
 
 Remove object files:
@@ -157,16 +147,10 @@ After successful compilation, the static library `libft.a` will be generated at 
 
 ### Using Libft in another project
 
-Include the header file in your C source code:
-
-```c
-#include "libft.h"
-```
-
-Compile your program by linking the library:
+Compile the program with a main:
 
 ```bash
-cc main.c -L. -lft -I. -o program
+cc main.c libft.a -o program
 ```
 
 Run the executable:
@@ -212,7 +196,7 @@ libft/
 │
 ├── [Additional functions]
 │
-└── [Bonus functions]
+└── [Linked list functions]
 ```
 
 ---
@@ -238,12 +222,10 @@ All functions are designed to respect the 42 Norm and the constraints specified 
 
 The following resources are useful for understanding and implementing the project:
 
-- [42 School](https://42.fr/) – Official 42 curriculum.
-- [C Programming Language](https://en.cppreference.com/w/c) – C language documentation.
+- [GeeksForGeeks](https://www.geeksforgeeks.org/c/c-programming-language/) – C language documentation.
 - [Linux Manual Pages](https://man7.org/linux/man-pages/) – Reference for standard C and system functions.
-- [GNU Make Documentation](https://www.gnu.org/software/make/manual/) – Understanding Makefiles.
-- [Learn C](https://www.learn-c.org/) – C programming tutorials.
-- [Beej's Guide to C Programming](https://beej.us/guide/bgc/) – Additional C programming reference.
+- [W3School](https://www.w3schools.com/c/) – C programming tutorials.
+- [IBM](https://www.ibm.com/docs/fr/ibm-mq/9.3.x?topic=mqi-c-programming) – Additional C programming reference.
 
 ### AI Usage
 
@@ -253,7 +235,6 @@ Specifically, AI assistance was used for:
 
 - Structuring and formatting the README file.
 - Improving the clarity of technical descriptions.
-- Organizing the library functions into logical categories.
 
 AI was not used as a substitute for understanding the project's implementation. The code, its behavior and its compliance with the 42 requirements remain the responsibility of the author.
 
@@ -275,8 +256,3 @@ Through Libft, I developed a better understanding of:
 Libft is the foundation for many future projects in the 42 Common Core curriculum.
 
 ---
-
-\<p align="center">
-&#x20; \<b>42 Common Core · Libft\</b>\<br>
-&#x20; \<i>Learning C, one function at a time.\</i>
-\</p>
